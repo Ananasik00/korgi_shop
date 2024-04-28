@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+
+  random_dog_service:
+    restart: on-failure
+    container_name: random_dog_service
+    build: random_dog_service/
+    ports:
+      - "8001:80"
+
+  korgi_shop_service:
+    restart: on-failure
+    container_name: korgi_shop_service
+    build: korgi_shop_service/
+    ports:
+      - "8000:80"
