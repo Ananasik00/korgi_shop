@@ -6,4 +6,4 @@ class Korgi(BaseModel):
     name: str
     age: int
     description: Optional[str]
-    price: float  # Добавление поля цены в модель данных
+    price: float  # Добавление поля цены в модель данных.
